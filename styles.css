@@ -80,7 +80,19 @@ body {
     width: 100px;
 }
 
-
+@media (min-width:768px) {
+    .greeting {
+        display: none;
+    }
+    .greet {
+        height: 800px;
+        width: 1600px;
+    }
+    .indian_heritage {
+        height: 800px;
+        width: 800px;
+    }
+}
 
 .card-container {
     display: flex;
