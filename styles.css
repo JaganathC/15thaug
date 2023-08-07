@@ -157,6 +157,15 @@ video {
 /* Add the following media query at the end of your CSS */
 
 @media (max-width: 768px) {
+    .caption {
+        font-size: 20px;
+        margin: 20px;
+        margin-top: 40px;
+    }
+    .ind_tag {
+        height: 80px;
+        width: 90px;
+    }
     .greeting {
         height: auto;
         width: 100%;
@@ -174,9 +183,7 @@ video {
         flex-direction: column;
         align-items: center;
     }
-    .unity_in_diversity,
-    .description,
-    .conclusion {
+    .description {
         width: 100%;
         padding: 20px;
         box-sizing: border-box;
