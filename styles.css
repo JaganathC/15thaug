@@ -4,6 +4,7 @@ body {
     padding: 0;
     overflow: scroll;
     background-color: #000;
+    margin-bottom: 30px;
 }
 
 .star-container {
@@ -13,6 +14,31 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .star {
@@ -33,9 +59,18 @@ body {
     }
 }
 
+.Heritage {
+    font-family: "Bree Serif";
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
 .caption {
     font-family: "Roboto";
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     margin: 20px;
     margin-top: 40px;
@@ -43,6 +78,15 @@ body {
 
 .or {
     color: orange;
+}
+
+.con {
+    height: 400px;
+}
+
+.conclusion {
+    margin-top: 40px;
+    text-align: center;
 }
 
 .wh {
@@ -94,6 +138,61 @@ body {
     }
 }
 
+
+/* Your existing CSS rules */
+
+
+/* Add the following media query at the end of your CSS */
+
+
+/* Your existing CSS rules */
+
+
+/* Add the following media query at the end of your CSS */
+
+
+/* Your existing CSS rules */
+
+
+/* Add the following media query at the end of your CSS */
+
+@media (max-width: 768px) {
+    .greeting {
+        height: auto;
+        width: 100%;
+    }
+    .greet {
+        display: none;
+    }
+    .indian_heritage {
+        width: 300px;
+    }
+    .con {
+        width: 500px;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .unity_in_diversity,
+    .description,
+    .conclusion {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+    .summary {
+        font-size: 16px;
+    }
+    .video-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +200,7 @@ body {
 }
 
 .indian_heritage {
-    height: 600px;
+    height: 700px;
     width: 800px;
 }
 
@@ -110,6 +209,7 @@ body {
     justify-content: center;
     text-align: center;
     max-width: 600px;
+    margin-top: 30px;
 }
 
 .summary {
@@ -117,4 +217,34 @@ body {
     font-family: "Bree Serif";
     font-weight: 42px;
     font-size: 19px;
+}
+
+@keyframes beating {
+    0% {
+        font-size: 10px;
+    }
+    100% {
+        font-size: 20px;
+    }
+}
+
+.heart-beat {
+    width: 10px;
+    height: 10px;
+    animation: beating 0.8s infinite;
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.footer_name {
+    color: white;
+    font-family: "Bree Serif";
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
 }
