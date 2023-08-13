@@ -20,6 +20,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    order: 1;
     max-width: 800px;
     padding: 20px;
     background-color: #fff;
@@ -39,6 +40,10 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.unity123 {
+    width: 200px;
 }
 
 .star {
@@ -89,12 +94,34 @@ video {
     text-align: center;
 }
 
+.image-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    width: 48%;
+    /* Adjust spacing as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
 .wh {
     color: white;
 }
 
 .gr {
-    color: green;
+    color: rgb(5, 202, 5);
 }
 
 .blue {
@@ -167,14 +194,14 @@ video {
         width: 90px;
     }
     .greeting {
-        height: auto;
-        width: 100%;
+        height: 600px;
+        width: 800px;
     }
     .greet {
         display: none;
     }
     .indian_heritage {
-        width: 300px;
+        max-width: 100%;
     }
     .con {
         width: 500px;
@@ -198,12 +225,19 @@ video {
         padding: 10px;
         max-width: 100%;
     }
+    .image-container-wrapper {
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+    }
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    justify-content: center;
 }
 
 .indian_heritage {
@@ -217,6 +251,9 @@ video {
     text-align: center;
     max-width: 600px;
     margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
 }
 
 .summary {
