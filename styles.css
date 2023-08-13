@@ -92,6 +92,8 @@ video {
 .conclusion {
     margin-top: 40px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .image-container-wrapper {
@@ -112,6 +114,21 @@ video {
 }
 
 .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container1 {
+    width: 48%;
+    /* Adjust spacing as needed */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.image-container1 img {
     width: 100%;
     height: auto;
 }
@@ -159,10 +176,6 @@ video {
         height: 800px;
         width: 1600px;
     }
-    .indian_heritage {
-        height: 800px;
-        width: 800px;
-    }
 }
 
 
@@ -206,10 +219,6 @@ video {
     .con {
         width: 500px;
     }
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
     .description {
         width: 100%;
         padding: 20px;
@@ -231,6 +240,9 @@ video {
     .image-container {
         width: 100%;
     }
+    .image-container1 {
+        width: 100%;
+    }
 }
 
 .card-container {
@@ -243,6 +255,10 @@ video {
 .indian_heritage {
     height: 700px;
     width: 800px;
+}
+
+.conc {
+    text-align: center;
 }
 
 .description {
@@ -291,4 +307,9 @@ video {
 
 .footer {
     text-align: center;
+}
+
+.conclus {
+    display: flex;
+    justify-content: center;
 }
